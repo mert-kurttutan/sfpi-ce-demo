@@ -15,3 +15,19 @@ Planned contents:
 - Compiler Explorer runtime configuration
 - local run instructions
 - basic validation steps for SFPI support
+
+## Podman
+
+Build:
+
+```bash
+podman build -t sfpi-ce-demo .
+```
+
+Run:
+
+```bash
+podman run --rm -p 10240:10240 sfpi-ce-demo
+```
+
+Then open `http://localhost:10240`.
